@@ -1,0 +1,26 @@
+
+.mobile-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .filter-container {
+    color: white; /* Set the default text color for the filter container */
+  }
+  
+  .filter-container label {
+    margin-right: 8px; /* Add some right margin for spacing between label and input/select */
+  }
+  
+  .filter-container input,
+  .filter-container select {
+    padding: 8px; /* Adjust the padding for better input/select appearance */
+    margin-bottom: 8px; /* Add some bottom margin for spacing between input/select elements */
+    border-radius: 4px;
+    border: 1px solid white; /* Set border color to white */
+    background-color: transparent; /* Set background color to transparent */
+    color: black; /* Set text color to white */
+  }
+  

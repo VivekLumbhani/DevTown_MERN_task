@@ -26,7 +26,7 @@ function GetAllMobiles() {
         console.log('Data received:', data);
 
         setAllMobiles(data);
-        setFilteredMobiles(data); // Initialize filteredMobiles with all mobiles
+        setFilteredMobiles(data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -43,8 +43,8 @@ function GetAllMobiles() {
   };
 
   useEffect(() => {
-    // Filter the mobiles based on search filters
-    const filteredData = allMobiles.filter((mobile) => {
+
+      const filteredData = allMobiles.filter((mobile) => {
       const nameMatch = mobile.namee.toLowerCase().includes(searchFilters.name.toLowerCase());
       const priceMatch = searchFilters.price ? mobile.price <= parseInt(searchFilters.price) : true;
       const memoryMatch = searchFilters.memory ? mobile.memory === searchFilters.memory : true;
